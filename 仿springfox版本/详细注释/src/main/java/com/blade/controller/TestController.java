@@ -1,18 +1,20 @@
 package com.blade.controller;
 
 
+import com.blade.User;
 import com.blade.mvc.annotation.GetRoute;
 import com.blade.mvc.annotation.JSON;
 import com.blade.mvc.annotation.Path;
 import com.blade.mvc.http.Response;
-import com.blade.self.apiannotation.ApiOperation;
+import com.blade.mvc.ui.RestResponse;
+import com.wordnik.swagger.core.ApiOperation;
 
 @Path
 public class TestController {
 
     @GetRoute("/signin")
     @JSON
-    @ApiOperation(value = "value sing", note = "我是猪")
+    @ApiOperation(value = "value sing" ,notes = "我是猪")
     public void signin(Response response){
         System.out.println("singin");
         User user = new User();
@@ -23,7 +25,7 @@ public class TestController {
 
     @GetRoute("/signinT")
     @JSON
-    @ApiOperation(value = "111111", note = "1111111111")
+    @ApiOperation(value = "111111" ,notes = "1111111111")
     public void signinT(Response response){
         System.out.println("singin");
         User user = new User();

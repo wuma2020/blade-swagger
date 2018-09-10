@@ -1,0 +1,56 @@
+[
+  {
+    "apiPathBean":{
+      "apiMethodBeans":[
+        {
+          "apiOperation":{
+            "code":"200",
+            "httpMethod":"",
+            "note":"我是猪",
+            "value":"value sing"
+          },
+          "description":"",
+          "httpMethod":"GET",
+          "value":[
+            "/signin"
+          ]
+        },
+        {
+          "apiOperation":{
+            "code":"200",
+            "httpMethod":"",
+            "note":"1111111111",
+            "value":"111111"
+          },
+          "description":"",
+          "httpMethod":"GET",
+          "value":[
+            "/signinT"
+          ]
+        }
+      ],
+      "description":"",
+      "restful":false,
+      "suffix":"",
+      "value":"/"
+    },
+    "controllerName":"TestController"
+  },
+  {
+    "apiBean":{
+      "description":"小明 pet",
+      "tags":"",
+      "value":"percontoller"
+    },
+    "apiPathBean":{
+      "apiMethodBeans":[
+
+      ],
+      "description":"",
+      "restful":false,
+      "suffix":"",
+      "value":"/"
+    },
+    "controllerName":"PetTestController"
+  }
+]

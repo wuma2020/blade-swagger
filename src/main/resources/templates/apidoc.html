@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div id="apidoc" hidden="hidden">
+    ${apidoc}
+</div>
+
+<div>
+    <div id="routename" >route name ： </div>
+    <div id="methodname" > method name : </div>
+
+</div>
+
+
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        var jsons = $("#apidoc").text();
+        var json = JSON.parse(jsons);
+        $.each(json,function(index , obj){
+            $("#routename").append(obj.controllerName);
+        });
+    });
+</script>
+
+</body>
+</html>

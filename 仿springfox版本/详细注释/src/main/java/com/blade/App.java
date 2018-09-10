@@ -1,5 +1,6 @@
 package com.blade;
 
+import com.blade.utils.BladeUtils;
 
 /**
  * Hello world!

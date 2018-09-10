@@ -2,8 +2,15 @@
 
 ---
 
-    该仓库是模仿springfox（整合springmvc和swagger)来进行整合Blade和swagger的仓库. 
 
+    仿造swager，给blade写的用于返回controller 的 json 数据
+
+-------
+2018/8/10
+
+    blade-swagger  ---  src 和 pom.xml  有时间准备好好写写 目前只支持3个注解
+
+-------
 
 此时：2018/8
 模仿的是第一版：[swagger-springmvc-0.1.0][1]
@@ -18,6 +25,10 @@
 
 **springmvc - swagger详细流程请看jilu.txt**
 > [jilu.txt][2]
+
+
+
+----
 
 
 
